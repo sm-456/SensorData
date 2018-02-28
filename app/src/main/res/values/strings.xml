@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SensorData</string>
+    <string-array name="parameter_array">
+        <item>temperature</item>
+        <item>pressure</item>
+        <item>humidity</item>
+        <item>moisture</item>
+    </string-array>
+
+</resources>

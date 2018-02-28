@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutCompat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sebastian.sensordata.MainActivity">
+
+    <Button
+        android:id="@+id/getDataButton"
+        android:layout_width="159dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:onClick="getData"
+        android:text="get data "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/readDataButton"
+        android:layout_width="159dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:onClick="readData"
+        android:text="read data"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getDataButton" />
+
+    <Button
+        android:id="@+id/sensorButton"
+        android:layout_width="159dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:onClick="sensors"
+        android:text="sensors"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/readDataButton" />
+
+    <Button
+        android:id="@+id/fileButton"
+        android:layout_width="159dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:onClick="createFile"
+        android:text="create file"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sensorButton" />
+
+    <TextView
+        android:id="@+id/textPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="36dp"
+        android:text=" "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fileButton"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/fileButton"
+        app:layout_constraintTop_toBottomOf="@+id/fileButton" />
+</android.support.constraint.ConstraintLayout>
